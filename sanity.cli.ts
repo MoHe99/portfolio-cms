@@ -2,8 +2,8 @@ import {defineCliConfig} from 'sanity/cli'
 
 export default defineCliConfig({
   api: {
-    projectId: '6smzv0nc',
-    dataset: 'production'
+    projectId: process.env.SANITY_STUDIO_SANITY_PROJECT_ID,
+    dataset: process.env.SANITY_STUDIO_SANITY_DATASET,
   },
   /**
    * Enable auto-updates for studios.
